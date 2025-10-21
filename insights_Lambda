@@ -1,0 +1,12 @@
+Os insights se concentram na aplicação prática do S3 e Lambda realizado para o projeto explicado no read.me abaixo.
+
+Foi verificado que a automação de tarefas com o Lambda dentro do projeto nos possibilida: 
+ - Agilidade no processo sem ser necessário um servidor ficar verificando novos arquivos, o S3 envia um evento diretamente para o Lambda.
+ - É criado um aclopamento fraco entre os armazenamento que facilita a atualização do código do Lambda, sem afetar o S3. 
+ - O Lambda automaticamente escala para processar múltiplos uploads simultâneos.
+Além das possibilidades descritas acima o Lambda consolida várias etapas do processo, sendo elas:
+    - Receber os eventos;
+    - Orquestrar a Transcodificação; 
+    - Monitorar e receber resultados;
+    - Armazenamento de metadados; 
+Diante disto, pode ser verificado que o lambda otimiza a tarefa consolidada e trás melhores resultados com sua utilização. 
